@@ -1,3 +1,3 @@
-FROM openjdk:8-jdk-alpine
-COPY "./target/ApiInventarioMiniFinal-0.0.1-SNAPSHOT.jar" "app.jar"
-ENTRYPOINT [ "java", "-jar", "app.jar" ]
+FROM amazoncorretto:21-jdk-alpine
+COPY target/ApiInventarioMiniFinal-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT [ "java", "-jar", "/app.jar" ]
